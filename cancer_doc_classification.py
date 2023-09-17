@@ -87,11 +87,9 @@ ax = sns.distplot(data['text_len'])
 ax.set(xlabel='Text length', ylabel='Frequency')
 plt.show()
 
-"""### Length of the text (number of word) stratified by outcome
+### Length of the text (number of word) stratified by outcome
 
 
-
-"""
 
 plt.figure(figsize=(12,6))
 num_1 = data[data['Target']== 'Thyroid_Cancer']['Text'].apply(lambda x: len(x.split()))
@@ -181,28 +179,7 @@ axes[2].set_title(f'Top {N} most common unigrams in Lung Cancer', fontsize=15)
 
 plt.show()
 
-"""# Preprocessing and feature engineering
-Drop the column unnamed as it is not useful
-
-Rename the column into readable form
-
-
-
-Steps :
-
-
-1) Converting into lower case
-
-2) Tokenizing : spliting sentences into words
-
-3) Removing special characters
-
-4) Removing stopwords and punctuations
-
-5) Stemming: converting into root words
-
-6) Join to make sentences
-"""
+# Preprocessing and feature engineering
 
 #Drop the column unnamed as it is not useful:
 data.drop('Unnamed: 0',axis=1,inplace=True)
@@ -315,13 +292,8 @@ for Model in Models :
 
 type(data['Text'])
 
-"""**BERT MODEL**
-
-
-still under work
 
 # Deployment
-"""
 
 model = GBCModel.fit(X_train, y_train)
 
