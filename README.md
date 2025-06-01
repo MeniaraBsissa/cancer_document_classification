@@ -1,0 +1,1 @@
+Projet de classification de documents sur le cancer impliquant la collecte et l’exploration des données, le prétraitement, l’ingénierie des caractéristiques, la modélisation avec divers algorithmes de machine learning, l’évaluation des performances et le déploiement via Flask.
